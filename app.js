@@ -41,7 +41,7 @@ function displayWord() {
   `;
   const innerWord = wordEl.innerText.replace(/\n/g, '');
   if(innerWord === selectedWord) {
-    finalMessage.innerText = 'YOU WON !!!! ';
+    finalMessage.innerText = 'Wygranko! ';
     popup.style.display='flex';
   }
 }
@@ -62,7 +62,7 @@ function updateWrong(){
  });
 
  if(wrongLetters.length === figureParts.length){
-   finalMessage.innerText =`LOST, the word was "${selectedWord}"`;
+   finalMessage.innerText =`Przegranko, słowo brzmi: "${selectedWord}"`;
    popup.style.display ='flex';
  }
 }
